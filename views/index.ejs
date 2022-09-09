@@ -1,0 +1,26 @@
+<%- include('partials/header.ejs') -%>
+
+<content class="flex-container-max-width-800">
+    <div class="flex-container flex-container-max-width-800 flex-direction-column">
+        <!-- Brief the user with what they need to do. -->
+        <div class="prompt flex-100w">
+            <p class="flex-100w">Translate this sentence:</p>
+        </div>
+        <!-- Prompt the user with a randomly-selected phrase to translate. -->
+        <div class="phrase">
+            <span class="flex-100w">
+                <% for (var index = 0; index < phrase.length; index++) { %>
+                    <div><p class="hint-token"><%= phrase[index] %></p></div>
+                <% } %>
+            </span>
+        </div>
+        <!-- Provide a form for the user to enter their translation. -->
+        <div class="flex-100w">
+            <form class="flex-100w" action="/translate" method="POST">
+                <input type="text" name="translation" placeholder="Translate the sentence to English.">
+            </form>
+        </div>
+    </div>
+</content>
+
+<%- include('partials/footer.ejs') -%>

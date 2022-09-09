@@ -1,0 +1,16 @@
+
+footer {
+    border-top: 1px solid var(--border-color-gray);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container p {
+    justify-content: center;
+}

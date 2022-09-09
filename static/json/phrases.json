@@ -1,0 +1,84 @@
+{
+    "greetings": [
+        {
+            "phrase": "あの、お名前は何ですか",
+            "valid_answers": ["Um, what is your name?"]
+        },
+        {
+            "phrase": "いいえ、元気ではありません",
+            "valid_answers": ["No, I am not well"]
+        },
+        {
+            "phrase": "すみません",
+            "valid_answers": ["Excuse me"]
+        },
+        {
+            "phrase": "水",
+            "valid_answers": ["Water"]
+        },
+        {
+            "phrase": "水を、ください",
+            "valid_answers": ["Water, please"]
+        },
+        {
+            "phrase": "ニコラスさんは英語とスパイン語が話せます",
+            "valid_answers": ["Nicolas can speak English and Spanish", "Mr. Nicolas can speak English and Spanish"]
+        },
+        {
+            "phrase": "お名前は何ですか",
+            "valid_answers": ["What is your name?"]
+        },
+        {
+            "phrase": "ええ、もちろんです",
+            "valid_answers": ["Yes, of course"]
+        },
+        {
+            "phrase": "フランス語が話せますか",
+            "valid_answers": ["Can you speak French?"]
+        },
+        {
+            "phrase": "ジョンさんはイタリア語が話せます",
+            "valid_answers": ["John can speak Italian", "Mr. John can speak Italian"]
+        },
+        {
+            "phrase": "さくらさん、おげんきですか",
+            "valid_answers": ["Sakura, are you well?", "Miss Sakura, are you well?"]
+        },
+        {
+            "phrase": "僕の名前は茂です",
+            "valid_answers": ["My name is Shigeru"]
+        },
+        {
+            "phrase": "茂さんは学生です",
+            "valid_answers": ["Shigeru is a student", "Mr. Shigeru is a student"]
+        },
+        {
+            "phrase": "英語が話せます",
+            "valid_answers": ["I can speak English"]
+        },
+        {
+            "phrase": "私の名前は本田さくらです",
+            "valid_answers": ["My name is Sakura Honda"]
+        },
+        {
+            "phrase": "いいえ、中国人ではありません",
+            "valid_answers": ["No, I am not Chinese"]
+        },
+        {
+            "phrase": "英語は話せますか",
+            "valid_answers": ["Can you speak Chinese?"]
+        },
+        {
+            "phrase": "もちろんです",
+            "valid_answers": ["Sure thing"]
+        },
+        {
+            "phrase": "田中先生は日本語と英語が話せます",
+            "valid_answers": [""]
+        },
+        {
+            "phrase": "何ですか",
+            "valid_answers": ["What?"]
+        }
+    ]
+}
