@@ -22,7 +22,10 @@ def main(__argv: list, /) -> int:
 
     # For my purposes, I only need select keys from the original dataset.
     filtered_kanji: dict = {
-        k: {"meanings": v["meanings"], "readings": v["readings_on"]}
+        k: {
+            "meanings": v["meanings"],
+            "readings": v["readings_on"] + v["readings_kun"]
+        }
         for (k, v) in kanji.items()
     }
 
