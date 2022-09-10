@@ -5,11 +5,7 @@ const app = express();
 app.use('/static', express.static('static'));
 app.use(express.urlencoded({ extended: true }));
 
-app.listen(8000, () => {
-    console.log(`Listening on: http://localhost:8000`);
-});
-
-// ---------------------------------------------------------------------------
+let phraseIndex = 0;
 
 // Prepare the string for case-insensitive comparison.
 function cleanupString(string) {
@@ -26,6 +22,7 @@ function cleanupValidAnswers(phrasesCategory) {
     return;
 }
 
+// Helper function to save some repetitive typing.
 function getParameters(index) {
     const phrasesGreetings = require('./static/json/phrases.json').greetings;
     cleanupValidAnswers(phrasesGreetings);
@@ -38,19 +35,20 @@ function getParameters(index) {
     };
 }
 
-// For incrementing the index of the phrase.
-let index = 0;
-
-// ---------------------------------------------------------------------------
+app.listen(8000, () => {
+    console.log(`Listening on: http://localhost:8000`);
+});
 
 app.get('/', (request, response) => {
-    response.render('index.ejs', getParameters(index));
+    response.render('index.ejs', getParameters(phraseIndex));
 });
 
 app.post('/translate', (request, response) => {
     let translation = request.body.translation;
-    if (getParameters(index).valid_answers.includes(cleanupString(translation))) {
-        index++;
+    if (getParameters(phraseIndex).valid_answers.includes(
+            cleanupString(translation)
+    )) {
+        phraseIndex++;
     }
     response.redirect('/');
 });
