@@ -13,10 +13,6 @@
             "valid_answers": ["Excuse me"]
         },
         {
-            "phrase": "水",
-            "valid_answers": ["Water"]
-        },
-        {
             "phrase": "水を、ください",
             "valid_answers": ["Water, please"]
         },
@@ -74,7 +70,7 @@
         },
         {
             "phrase": "田中先生は日本語と英語が話せます",
-            "valid_answers": [""]
+            "valid_answers": ["Professor Tanaka can speak Japanese and English"]
         },
         {
             "phrase": "何ですか",
